@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-	<ProjectReference Include="..\Admin.NET.Application\Admin.NET.Application.csproj" />
     <ProjectReference Include="..\YikedaAdmin.Application\YikedaAdmin.Application.csproj" />
   </ItemGroup>
 
