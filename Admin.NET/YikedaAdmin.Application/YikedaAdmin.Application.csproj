@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <Folder Include="Entity\" />
+    <Folder Include="Sql\" />
   </ItemGroup>
 
 </Project>
