@@ -9,6 +9,9 @@ import { CodeInspectorPlugin } from 'code-inspector-plugin';
 import fs from 'fs';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { webUpdateNotice } from '@plugin-web-update-notification/vite';
+
+import vueDevTools from 'vite-plugin-vue-devtools'
+
 const pathResolve = (dir: string) => {
 	return resolve(__dirname, '.', dir);
 };
@@ -23,6 +26,7 @@ const viteConfig = defineConfig((mode: ConfigEnv) => {
 	fs.writeFileSync('./public/config.js', `window.__env__ = ${JSON.stringify(env, null, 2)} `);
 	return {
 		plugins: [
+			vueDevTools(),
 			visualizer({ open: false }), // 开启可视化分析页面
 			CodeInspectorPlugin({
 				bundler: 'vite',
