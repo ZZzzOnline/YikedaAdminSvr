@@ -24,6 +24,7 @@ import other from '/@/utils/other';
 import { storeToRefs } from 'pinia';
 import { useThemeConfig } from '/@/stores/themeConfig';
 import { useRoutesList } from '/@/stores/routesList';
+import { RouteItem, RouteItems, RouteToFrom } from '/@/types/global';
 
 // 定义变量内容
 const stores = useRoutesList();
